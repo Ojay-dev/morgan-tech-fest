@@ -8,7 +8,6 @@ import SmallYellowGlitterIcon from '@/components/icons/IconSmYellowGlitter.vue'
 import ArrowExternalIcon from '@/components/icons/IconArrowExternal.vue'
 import MessageIcon from '@/components/icons/IconMessage.vue'
 import TwitterIcon from '@/components/icons/IconTwitter.vue'
-import FacebookIcon from '@/components/icons/IconFacebook.vue'
 import InstagramIcon from '@/components/icons/IconInstagram.vue'
 import GithubIcon from '@/components/icons/IconGithub.vue'
 import DiscordIcon from '@/components/icons/IconDiscord.vue'
@@ -23,7 +22,7 @@ const schedule = [
   'Award',
   'Networking',
   'Panel Session',
-  'Project Presentation'
+  'Project'
 ]
 
 const panelist = [
@@ -188,7 +187,7 @@ const FaqQuestionsAnswers = [
 </script>
 
 <template>
-  <div>
+  <div id="hero">
     <div class="hidden bg-blue-theme pt-14 lg:block">
       <div class="mx-auto lg:max-w-5xl">
         <div class="hero-grid">
@@ -257,8 +256,8 @@ const FaqQuestionsAnswers = [
     <div class="lg:mx-auto lg:max-w-4xl">
       <div class="video-container">
         <iframe
-          src="https://www.youtube.com/embed/vBqOMLd1ZQk"
-          title="8 Surprising Habits that Got Me Millions of Subscribers"
+          src="https://www.youtube.com/embed/rI_NHdC4kEY"
+          title="Networking Session"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
@@ -267,13 +266,13 @@ const FaqQuestionsAnswers = [
     </div>
   </div>
 
-  <div class="bg-[#FEF8F0] px-6 pb-[109px] pt-10 md:pb-[174px]">
+  <div class="bg-[#FEF8F0] px-6 pb-[109px] pt-4 md:pb-[174px]" id="about">
     <div class="lg:mx-auto lg:max-w-4xl">
       <div class="flex flex-col items-center gap-x-9 gap-y-4 md:flex-row">
         <h2 class="sub-title-dark w-full">About Us</h2>
         <p class="font-urbanist max-w-[626px] text-xl font-normal">
-          Morgan TechFest is a tech based event by Morgan State University’s Computer Science
-          Department.
+          Morgan TechFest is A student-led tech conference sponsored through the computer science
+          department at Morgan State University.
         </p>
       </div>
     </div>
@@ -281,15 +280,15 @@ const FaqQuestionsAnswers = [
     <div class="mt-11 lg:mx-auto lg:max-w-5xl">
       <div class="flex flex-col items-center gap-x-12 gap-y-12 md:flex-row">
         <p class="font-urbanist text-xl font-normal md:w-1/2">
-          Morgan TechFest is an educational technology conference that educates students about the
-          influence of technology on their career paths, facilitating networking with tech experts,
-          enabling job applications in the tech industry, and recognizing outstanding
-          tech-innovative research posters through showcases and awards.
+          Morgan TechFest focuses on educating students about the influence of technology on their
+          career paths, facilitating networking with tech experts, enabling job opportunities in the
+          tech industry, and recognizing outstanding tech-innovative research through poster
+          showcases and awards.
         </p>
 
         <div class="md:w-1/2">
           <img
-            src="https://res.cloudinary.com/ojay-dev/image/upload/v1693912400/MorganTechFest/gallery/conference_shzq0i.png"
+            src="https://res.cloudinary.com/ojay-dev/image/upload/v1693949804/MorganTechFest/gallery/DYO_0087_websize_1_svatmt.png"
             alt="conference"
             class="w-full"
           />
@@ -298,7 +297,7 @@ const FaqQuestionsAnswers = [
     </div>
   </div>
 
-  <div class="bg-blue-theme px-6 pb-[71px] pt-[51px] lg:pb-[239px] lg:pt-[112px]">
+  <div class="bg-blue-theme px-6 pb-[71px] pt-[51px] lg:pb-[239px] lg:pt-[112px]" id="schedule">
     <div class="lg:mx-auto lg:max-w-5xl">
       <h2 class="sub-title mx-auto">schedule</h2>
 
@@ -317,10 +316,20 @@ const FaqQuestionsAnswers = [
         </RouterLink>
       </div>
 
-      <div class="mt-24 lg:mt-40">
+      <div class="mt-24 lg:mt-40" id="speakers">
         <h2 class="sub-title mx-auto">speakers</h2>
 
-        <div class="mt-6 flex flex-col justify-end gap-x-8 gap-y-6 lg:mt-24 lg:flex-row">
+        <div class="mt-6 flex flex-col justify-center gap-x-8 gap-y-6 lg:mt-24 lg:flex-row">
+          <div class="speaker-img-container">
+            <img
+              src="https://res.cloudinary.com/ojay-dev/image/upload/v1693946864/MorganTechFest/speakers/Rectangle_10_tbocb9.png"
+              alt="Dr. Yacob Astatke"
+              class="h-full w-full"
+            />
+
+            <span class="speaker-name">Dr. Yacob Astatke</span>
+          </div>
+
           <div class="speaker-img-container">
             <img
               src="https://res.cloudinary.com/ojay-dev/image/upload/v1693931259/MorganTechFest/speakers/Timothy_A_Akers_wrxvzi.png"
@@ -355,8 +364,8 @@ const FaqQuestionsAnswers = [
     </div>
   </div>
 
-  <div class="px-6 pb-16 pt-14 lg:mx-auto lg:max-w-5xl lg:pb-52 lg:pt-40">
-    <h2 class="sub-title-dark mx-auto">schedule</h2>
+  <div class="px-6 pb-16 pt-14 lg:mx-auto lg:max-w-5xl lg:pb-52 lg:pt-40" id="sponsors">
+    <h2 class="sub-title-dark mx-auto">sponsors</h2>
 
     <div class="mt-20 flex flex-col items-center gap-y-16 lg:gap-y-24">
       <div>
@@ -387,7 +396,9 @@ const FaqQuestionsAnswers = [
       <p class="font-urbanist mt-9 text-base font-bold text-white lg:mt-[60px] lg:text-xl">
         Learn more about the opportunity to become a Gold sponsor or explore other available
         sponsorship tiers for the upcoming event. Please send an email to:
-        <a href="mailto:morgantechfest@gmail.com">morgantechfest@gmail.com</a>
+        <a href="mailto:morgantechfest@gmail.com" target="_blank" rel="noopener noreferrer"
+          >morgantechfest@gmail.com</a
+        >
       </p>
 
       <div class="mt-14 flex justify-center lg:mt-16">
@@ -417,13 +428,13 @@ const FaqQuestionsAnswers = [
 
   <div class="bg-blue-theme px-6 pb-20 pt-[86px] lg:pb-11 lg:pt-32">
     <div class="lg:mx-auto lg:max-w-5xl">
-      <h2 class="sub-title mx-auto">schedule</h2>
+      <h2 class="sub-title mx-auto">gallery</h2>
 
       <div class="mt-7">
         <div class="hidden gap-x-4 overflow-auto md:flex lg:gap-x-7">
           <div>
             <img
-              src="https://res.cloudinary.com/ojay-dev/image/upload/v1693912317/MorganTechFest/gallery/_PAG05471_uvuibu.png"
+              src="https://res.cloudinary.com/ojay-dev/image/upload/v1693949821/MorganTechFest/gallery/_PAG0547_1_1_z7ffvg.png"
               alt="gallery"
             />
           </div>
@@ -438,7 +449,7 @@ const FaqQuestionsAnswers = [
 
         <div class="flex gap-x-4 overflow-auto md:hidden lg:gap-x-7">
           <img
-            src="https://res.cloudinary.com/ojay-dev/image/upload/v1693912317/MorganTechFest/gallery/_PAG05471_uvuibu.png"
+            src="https://res.cloudinary.com/ojay-dev/image/upload/v1693949821/MorganTechFest/gallery/_PAG0547_1_1_z7ffvg.png"
             alt="gallery"
           />
 
@@ -449,17 +460,19 @@ const FaqQuestionsAnswers = [
         </div>
 
         <div class="mt-14 flex justify-center lg:mt-16">
-          <RouterLink
-            to="/"
+          <a
+            href="https://drive.google.com/drive/folders/15Vswx6fn4A6U_I6ScyX54fm6tYN70gGC?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             class="font-urbanist flex items-center gap-x-4 rounded-[44px] border-2 border-white px-6 py-4 text-lg font-semibold text-white hover:text-white md:text-2xl lg:border-0 lg:py-6 lg:text-3xl"
             >View album
             <ArrowExternalIcon />
-          </RouterLink>
+          </a>
         </div>
       </div>
     </div>
 
-    <div class="mt-16 lg:mx-auto lg:mt-44 lg:max-w-5xl">
+    <div class="mt-16 lg:mx-auto lg:mt-44 lg:max-w-5xl" id="faq">
       <h2 class="sub-title mx-auto">FAQ</h2>
 
       <div class="mt-5 lg:mt-6" v-for="item in FaqQuestionsAnswers" :key="item.name">
@@ -468,17 +481,45 @@ const FaqQuestionsAnswers = [
     </div>
 
     <div class="mt-[84px] flex justify-center gap-x-3">
-      <a href="#" class="block border border-[#D6D6D6] px-2 py-[14px]"><MessageIcon /></a>
+      <a
+        href="mailto:morgantechfest@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block border border-[#D6D6D6] px-2 py-[14px]"
+        ><MessageIcon
+      /></a>
 
-      <a href="#" class="block border border-[#D6D6D6] px-2 py-[14px]"><TwitterIcon /></a>
+      <a
+        href="https://twitter.com/MorganTechFest"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block border border-[#D6D6D6] px-2 py-[14px]"
+        ><TwitterIcon
+      /></a>
 
-      <a href="#" class="block border border-[#D6D6D6] px-2 py-[14px]"><FacebookIcon /></a>
+      <a
+        href=" https://www.instagram.com/morgantechfest/ "
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block border border-[#D6D6D6] px-2 py-[14px]"
+        ><InstagramIcon
+      /></a>
 
-      <a href="#" class="block border border-[#D6D6D6] px-2 py-[14px]"><InstagramIcon /></a>
+      <a
+        href="https://github.com/morgantechfest"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block border border-[#D6D6D6] px-2 py-[14px]"
+        ><GithubIcon
+      /></a>
 
-      <a href="#" class="block border border-[#D6D6D6] px-2 py-[14px]"><GithubIcon /></a>
-
-      <a href="#" class="block border border-[#D6D6D6] px-2 py-[14px]"><DiscordIcon /></a>
+      <a
+        href="https://www.discord.com/channels/morgantechfest"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block border border-[#D6D6D6] px-2 py-[14px]"
+        ><DiscordIcon
+      /></a>
     </div>
   </div>
 </template>
@@ -500,7 +541,7 @@ const FaqQuestionsAnswers = [
 }
 
 .video-section {
-  @apply relative px-6 pb-8 lg:px-0  lg:pb-[222px] lg:pt-20;
+  @apply relative px-6 pb-8 lg:px-0  lg:pb-[100px] lg:pt-20;
   background: linear-gradient(to bottom, #000080 0%, #000080 40%, #fef8f0 40%, #fef8f0 100%);
 }
 

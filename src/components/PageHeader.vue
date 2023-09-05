@@ -33,6 +33,35 @@ const titleClick = (e) => {
 const handleClick = (e) => {
   console.log('click', e)
   openKeys.value = ['']
+
+  // Define a mapping between the link key and the section id
+  const sectionIds = {
+    Home: 'home',
+    'About us': 'about',
+    Schedule: 'schedule',
+    Speakers: 'speakers',
+    Sponsors: 'sponsors',
+    FAQ: 'faq'
+    // Add mappings for other links as needed
+  }
+
+  const sectionId = sectionIds[e.key]
+  if (sectionId) {
+    // Calculate the offset to account for the header height
+    const headerHeight = document.querySelector('header').offsetHeight
+
+    // Use the element's `scrollIntoView` method to scroll to the section with the offset
+    const sectionElement = document.getElementById(sectionId)
+    if (sectionElement) {
+      const scrollToY = sectionElement.offsetTop - headerHeight - 230
+      console.log('Scrolling to Y:', scrollToY)
+
+      window.scrollTo({
+        top: scrollToY,
+        behavior: 'smooth'
+      })
+    }
+  }
 }
 
 const toggleMenu = () => {
@@ -60,12 +89,12 @@ watch(isMenuOpen, (val) => {
         </div>
 
         <nav class="hidden w-full max-w-screen-sm justify-between md:flex">
-          <RouterLink to="/" class="nav-link">Home</RouterLink>
-          <RouterLink to="/" class="nav-link">About us</RouterLink>
-          <RouterLink to="/" class="nav-link">Schedule</RouterLink>
-          <RouterLink to="/" class="nav-link">Speakers</RouterLink>
-          <RouterLink to="/" class="nav-link">Sponsors</RouterLink>
-          <RouterLink to="/" class="nav-link">FAQ</RouterLink>
+          <a href="#" v-scroll-to="'#hero'" class="nav-link">Home</a>
+          <a href="#" v-scroll-to="'#about'" class="nav-link">About us</a>
+          <a href="#" v-scroll-to="'#schedule'" class="nav-link">Schedule</a>
+          <a href="#" v-scroll-to="'#speakers'" class="nav-link">Speakers</a>
+          <a href="#" v-scroll-to="'#sponsors'" class="nav-link">Sponsors</a>
+          <a href="#" v-scroll-to="'#faq'" class="nav-link">FAQ</a>
         </nav>
 
         <RouterLink to="/" :class="buttonClass" @click="scaleDown">Register now</RouterLink>

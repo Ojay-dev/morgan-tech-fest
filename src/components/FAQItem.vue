@@ -11,9 +11,9 @@ function toggleRotation() {
 </script>
 
 <template>
-  <div>
+  <div class="border-b-[0.3px] border-[#ffffff89] pb-4">
     <div
-      class="flex cursor-pointer items-center justify-between border-b-[0.3px] border-[#ffffff89] py-3 lg:py-4"
+      class="flex cursor-pointer items-center justify-between py-3 lg:py-4"
       @click="toggleRotation"
     >
       <span class="text-2xl font-semibold text-white lg:text-3xl">{{ question }}</span>
@@ -25,7 +25,7 @@ function toggleRotation() {
 
     <p
       v-if="CouroselOpened"
-      class="font-urbanist py-3 text-base font-normal text-white lg:py-4 lg:text-xl"
+      class="font-urbanist rounded-2xl bg-[#070663] px-6 py-4 text-lg font-normal text-white lg:py-6 lg:text-2xl"
     >
       {{ answer }}
     </p>
