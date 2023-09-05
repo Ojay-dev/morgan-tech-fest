@@ -2,7 +2,7 @@
 // import { useRoute } from 'vue-router'
 import ChocolateMenuIcon from '@/components/icons/IconChocolateMenu.vue'
 
-import { reactive, ref, h, computed, watch } from 'vue'
+import { ref, computed, watch } from 'vue'
 import { AppstoreOutlined } from '@ant-design/icons-vue'
 // const route = useRoute()
 
@@ -20,7 +20,7 @@ const buttonClass = computed(() => ({
   clicked: isClicked.value
 }))
 
-// Antd menu
+// Antd menu functions
 const selectedKeys = ref(['1'])
 const openKeys = ref([''])
 
@@ -36,7 +36,6 @@ const handleClick = (e) => {
 }
 
 const toggleMenu = () => {
-  // openKeys.value = ['sub2']
   isMenuOpen.value = !isMenuOpen.value
 }
 
@@ -103,6 +102,7 @@ watch(isMenuOpen, (val) => {
   /*
   backdrop-filter: blur(3.3px);
   */
+  border: 3px solid rgba(255, 255, 255, 0.014);
   background: linear-gradient(
       175deg,
       rgba(177, 177, 177, 0.32) 5.24%,
@@ -111,11 +111,11 @@ watch(isMenuOpen, (val) => {
     rgba(0, 0, 128, 0.3);
 }
 .nav-link {
-  @apply font-Urbanist text-base font-medium text-white;
+  @apply font-urbanist text-base font-medium text-white;
 }
 
 .register-btn {
-  @apply flex h-[40px] w-full max-w-[165px] items-center justify-center rounded-[80px] px-9 text-sm font-extrabold md:h-14 md:max-w-[196px]  md:text-lg;
+  @apply flex h-[40px] w-full max-w-[165px] items-center justify-center rounded-[80px] px-9 text-sm font-extrabold text-[#121139] md:h-14 md:max-w-[196px] md:text-lg;
   background: linear-gradient(180deg, #fc711b 25.62%, #fc4608 100.89%);
 }
 

@@ -7,8 +7,8 @@ export default {
         'blue-theme': '#000080'
       },
       fontFamily: {
-        Bebas: ['Bebas Neue', 'sans-serif'],
-        Urbanist: ['Urbanist', 'sans-serif']
+        bebas: ['Bebas Neue', 'sans-serif'],
+        urbanist: ['Urbanist', 'sans-serif']
       },
       screens: {
         xs: '425px',
