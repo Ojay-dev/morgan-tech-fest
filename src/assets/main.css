@@ -5,29 +5,27 @@
 @tailwind utilities;
 
 @layer base {
-  .nav-link {
-    @apply font-Urbanist text-xl font-medium text-white;
+  .antd-custom-menu .ant-menu-submenu-title {
+    display: none !important;
   }
 
-  .register-btn {
-    border-radius: 80px;
-    background: linear-gradient(180deg, #fc711b 25.62%, #fc4608 100.89%);
-    padding: 1rem 2rem;
+  .antd-custom-menu .ant-menu-submenu {
+    background: #070663 !important;
   }
 
-  .hero-grid {
-    @apply relative grid items-center justify-center gap-y-4 lg:grid-cols-[384px_0.4fr_384px] lg:gap-y-0;
+  .antd-custom-menu .ant-menu-sub {
+    background: #070663 !important;
   }
 
-  .hero-text {
-    @apply block max-w-[376px] text-center font-Bebas text-8xl font-normal text-white lg:text-left lg:text-[112px];
+  .antd-custom-menu .ant-menu-item {
+    @apply p-0 font-Urbanist text-lg font-medium text-white;
+    color: white !important;
+    padding-left: 0px !important;
+    text-align: center;
+    margin-bottom: 16px !important;
   }
 
-  .video-container {
-    @apply relative -mt-[150px] h-0 w-full pb-[56.25%] lg:-mt-[325px];
-  }
-
-  .video-container iframe {
-    @apply absolute left-0 top-0 h-full w-full rounded-[30px];
+  .antd-custom-menu .ant-menu-item-selected {
+    background-color: #fd5b12a8 !important;
   }
 }
