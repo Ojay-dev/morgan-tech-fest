@@ -55,8 +55,8 @@ const panelist = [
     name: 'Micheal Hoggard'
   },
   {
-    img: 'https://res.cloudinary.com/ojay-dev/image/upload/v1693943257/MorganTechFest/panelist/SpeakerImage05_p5uuij.png',
-    name: 'Efuru okororie'
+    img: 'https://res.cloudinary.com/ojay-dev/image/upload/v1694119054/MorganTechFest/panelist/Rebecca_Rosena_q3vxzt.png',
+    name: 'Rebecca Rosena'
   }
 ]
 

@@ -169,7 +169,7 @@ onUnmounted(() => {
   backdrop-filter: blur(3.3px);
 }
 .nav-link {
-  @apply font-urbanist text-base font-medium text-white;
+  @apply font-urbanist text-xl font-medium text-white;
 }
 
 .register-btn {
