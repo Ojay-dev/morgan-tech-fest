@@ -27,31 +27,31 @@ const schedule = [
 
 const panelist = [
   {
-    img: 'https://res.cloudinary.com/ojay-dev/image/upload/v1693943247/MorganTechFest/panelist/SpeakerImage04_id4wbq.png',
+    img: 'https://res.cloudinary.com/ojay-dev/image/upload/v1694034987/MorganTechFest/panelist/Dr._Md_Rahman_nzhtz2.png',
     name: 'Mahmudur Rahman'
   },
   {
-    img: 'https://res.cloudinary.com/ojay-dev/image/upload/v1693943246/MorganTechFest/panelist/SpeakerImage03_qkstvq.png',
+    img: 'https://res.cloudinary.com/ojay-dev/image/upload/v1694035269/MorganTechFest/panelist/Dr._Oludare_Owolabi_asncbj.png',
     name: 'Dr. Oludare Owolabi'
   },
   {
-    img: 'https://res.cloudinary.com/ojay-dev/image/upload/v1693943246/MorganTechFest/panelist/SpeakerImage02_xzsb1e.png',
+    img: 'https://res.cloudinary.com/ojay-dev/image/upload/v1694035437/MorganTechFest/panelist/Prof._Tomasz_Durakiewicz_1_mumive.png',
     name: 'Prof. Tomasz Durakiewicz'
   },
   {
-    img: 'https://res.cloudinary.com/ojay-dev/image/upload/v1693943245/MorganTechFest/panelist/SpeakerImage01_go2erf.png',
+    img: 'https://res.cloudinary.com/ojay-dev/image/upload/v1694034703/MorganTechFest/panelist/Monir_Sharker_paihad.png',
     name: 'Monir Sharker'
   },
   {
-    img: 'https://res.cloudinary.com/ojay-dev/image/upload/v1693943267/MorganTechFest/panelist/SpeakerImage08_vtzazo.png',
+    img: 'https://res.cloudinary.com/ojay-dev/image/upload/v1694034333/MorganTechFest/panelist/taofeek_mzebqx.png',
     name: 'Taofeek Obafemi Babatunde'
   },
   {
-    img: 'https://res.cloudinary.com/ojay-dev/image/upload/v1693943260/MorganTechFest/panelist/SpeakerImage07_o1wv6a.png',
+    img: 'https://res.cloudinary.com/ojay-dev/image/upload/v1694035608/MorganTechFest/panelist/Michael_McDonald_nvrpar.png',
     name: 'Michael Mcdonald'
   },
   {
-    img: 'https://res.cloudinary.com/ojay-dev/image/upload/v1693943258/MorganTechFest/panelist/SpeakerImage06_qpfazk.png',
+    img: 'https://res.cloudinary.com/ojay-dev/image/upload/v1694035824/MorganTechFest/panelist/Mike_Hoggard_copy_csuu5w.png',
     name: 'Micheal Hoggard'
   },
   {
@@ -107,88 +107,74 @@ const partners = [
 const FaqQuestionsAnswers = [
   {
     question: 'What exactly is Morgan TechFest?',
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil temporibus voluptatibus
-      impedit incidunt dignissimos harum aperiam asperiores soluta? Quidem magni corrupti tempore
-      quibusdam excepturi quaerat expedita ipsam, iusto ea!`
+    answer: `Morgan TechFest is a two-day in-person student-led tech conference that brings together developers, researchers, and tech enthusiasts across universities in the US.`
   },
   {
     question: 'Who is eligible to participate in Morgan TechFest?',
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil temporibus voluptatibus
-      impedit incidunt dignissimos harum aperiam asperiores soluta? Quidem magni corrupti tempore
-      quibusdam excepturi quaerat expedita ipsam, iusto ea!`
+    answer: `University students (undergraduate, graduate, or postgraduate)`
   },
   {
     question: 'Which specific domain of research does Morgan TechFest emphasize?',
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil temporibus voluptatibus
-      impedit incidunt dignissimos harum aperiam asperiores soluta? Quidem magni corrupti tempore
-      quibusdam excepturi quaerat expedita ipsam, iusto ea!`
+    answer: `All tech-related research (AI, VR, blockchain, software, etc.)`
   },
   {
     question: 'Are there any accolades presented for exceptional research contributions?',
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil temporibus voluptatibus
-      impedit incidunt dignissimos harum aperiam asperiores soluta? Quidem magni corrupti tempore
-      quibusdam excepturi quaerat expedita ipsam, iusto ea!`
+    answer: `Yes. We award the best 3 research papers.`
   },
   {
     question: 'Is Morgan TechFest accessible to all university students?',
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil temporibus voluptatibus
-      impedit incidunt dignissimos harum aperiam asperiores soluta? Quidem magni corrupti tempore
-      quibusdam excepturi quaerat expedita ipsam, iusto ea!`
+    answer: `Yes! We invite all students to join us at the National Treasure, Morgan State University`
   },
   {
     question: 'How do I go about registering for Morgan TechFest?',
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil temporibus voluptatibus
-      impedit incidunt dignissimos harum aperiam asperiores soluta? Quidem magni corrupti tempore
-      quibusdam excepturi quaerat expedita ipsam, iusto ea!`
+    answer: `Just click on the registration button on this page and fill out the form.`
   },
   {
     question: 'What steps can I take to engage my university in Morgan TechFest?',
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil temporibus voluptatibus
-      impedit incidunt dignissimos harum aperiam asperiores soluta? Quidem magni corrupti tempore
-      quibusdam excepturi quaerat expedita ipsam, iusto ea!`
+    answer: `Connect us with your university or department, and we will take it from there.`
   },
   {
-    question: 'Is there any form of transportation assistance provided?',
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil temporibus voluptatibus
-      impedit incidunt dignissimos harum aperiam asperiores soluta? Quidem magni corrupti tempore
-      quibusdam excepturi quaerat expedita ipsam, iusto ea!`
+    question: 'What if I am doing nothing related to technology? Can I come?',
+    answer: `Yes! Morgan TechFest is open to anyone interested in developing a career or business in the tech space. We have put together robust educational programs to help anyone interested in starting a career or business in the field.`
   },
   {
-    question: 'Are there arrangements for accommodations during the event?',
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil temporibus voluptatibus
-      impedit incidunt dignissimos harum aperiam asperiores soluta? Quidem magni corrupti tempore
-      quibusdam excepturi quaerat expedita ipsam, iusto ea!`
-  },
-  {
-    question: 'When is the scheduled date for Morgan TechFest?',
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil temporibus voluptatibus
-      impedit incidunt dignissimos harum aperiam asperiores soluta? Quidem magni corrupti tempore
-      quibusdam excepturi quaerat expedita ipsam, iusto ea!`
-  },
-  {
-    question: 'How many days does the duration of Morgan TechFest span?',
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil temporibus voluptatibus
-      impedit incidunt dignissimos harum aperiam asperiores soluta? Quidem magni corrupti tempore
-      quibusdam excepturi quaerat expedita ipsam, iusto ea!`
+    question: 'Morgan TechFest is when?',
+    answer: `It is a two-day event, starting on Thursday, November 9, from 10 a.m. to 4 p.m. and Friday, November 10, from 10 a.m. to 4 p.m. `
   },
   {
     question: 'Are provisions like breakfast, lunch, and dinner included?',
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil temporibus voluptatibus
-      impedit incidunt dignissimos harum aperiam asperiores soluta? Quidem magni corrupti tempore
-      quibusdam excepturi quaerat expedita ipsam, iusto ea!`
+    answer: `Yes! Food and drinks are available, and we also do our best to accommodate all kinds of dietary`
   },
   {
-    question: 'Are facilities available for toiletries and personal necessities?',
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nihil temporibus voluptatibus
-      impedit incidunt dignissimos harum aperiam asperiores soluta? Quidem magni corrupti tempore
-      quibusdam excepturi quaerat expedita ipsam, iusto ea!`
+    question: 'How do I get there?',
+    answer: `We provide transportation support through your university, department, and student organization.`
+  },
+  {
+    question: 'Is Morgan TechFest free?',
+    answer: `Yes. It's free and made for all students.`
+  },
+  {
+    question: 'Is Morgan TechFest in-person?',
+    answer: `Yes! It is an in-person event.`
+  },
+  {
+    question: 'Location?',
+    answer: `University Student Center, Calvin and Tina Tyler Ballroom, Morgan State University.`
+  },
+  {
+    question: 'Is it specific to any department?',
+    answer: `No. In fact, we want to expose you to how technology is altering your field and how you can switch or channel your career towards it.`
+  },
+  {
+    question: 'Any other opportunities?',
+    answer: `Yes! So much more! You’ve got to network with tech professionals, apply for jobs, get awarded for your innovative tech-driven research, and network with other students, developers, and researchers.`
   }
 ]
 </script>
 
 <template>
   <div id="hero">
-    <div class="hidden bg-blue-theme pt-14 lg:block">
+    <div class="hidden bg-blue-theme pt-14 lg:block lg:pb-[100px]">
       <div class="mx-auto lg:max-w-5xl">
         <div class="hero-grid">
           <span class="hero-text">Discover</span>
@@ -222,7 +208,7 @@ const FaqQuestionsAnswers = [
       </div>
     </div>
 
-    <div class="block bg-blue-theme pb-[100px] pt-8 lg:hidden lg:pb-[140px]">
+    <div class="block bg-blue-theme pb-[100px] pt-8 lg:hidden">
       <div class="px-6 lg:px-0">
         <div class="hero-grid">
           <span class="hero-text">Discover</span>
@@ -270,7 +256,7 @@ const FaqQuestionsAnswers = [
     <div class="lg:mx-auto lg:max-w-4xl">
       <div class="flex flex-col items-center gap-x-9 gap-y-4 md:flex-row">
         <h2 class="sub-title-dark w-full">About Us</h2>
-        <p class="font-urbanist max-w-[626px] text-xl font-normal">
+        <p class="max-w-[626px] font-urbanist text-xl font-normal">
           Morgan TechFest is A student-led tech conference sponsored through the computer science
           department at Morgan State University.
         </p>
@@ -310,7 +296,7 @@ const FaqQuestionsAnswers = [
       <div class="mt-14 flex justify-center lg:mt-16">
         <RouterLink
           to="/"
-          class="font-urbanist flex items-center gap-x-4 rounded-[44px] border-2 border-white px-6 py-4 text-lg font-semibold text-white hover:text-white md:text-2xl lg:border-0 lg:py-6 lg:text-3xl"
+          class="flex items-center gap-x-4 rounded-[44px] border-2 border-white px-6 py-4 font-urbanist text-lg font-semibold text-white hover:text-white md:text-2xl lg:border-0 lg:py-6 lg:text-3xl"
           >Check full schedule here
           <ArrowExternalIcon />
         </RouterLink>
@@ -319,12 +305,14 @@ const FaqQuestionsAnswers = [
       <div class="mt-24 lg:mt-40" id="speakers">
         <h2 class="sub-title mx-auto">speakers</h2>
 
-        <div class="mt-6 flex flex-col justify-center gap-x-8 gap-y-6 lg:mt-24 lg:flex-row">
+        <div
+          class="mt-6 flex flex-col items-center justify-center gap-x-8 gap-y-6 lg:mt-24 lg:flex-row"
+        >
           <div class="speaker-img-container">
             <img
-              src="https://res.cloudinary.com/ojay-dev/image/upload/v1693946864/MorganTechFest/speakers/Rectangle_10_tbocb9.png"
+              src="https://res.cloudinary.com/ojay-dev/image/upload/v1694032219/MorganTechFest/speakers/1692902593759_1_thgonx.jpg"
               alt="Dr. Yacob Astatke"
-              class="h-full w-full"
+              class="object-cover"
             />
 
             <span class="speaker-name">Dr. Yacob Astatke</span>
@@ -332,9 +320,9 @@ const FaqQuestionsAnswers = [
 
           <div class="speaker-img-container">
             <img
-              src="https://res.cloudinary.com/ojay-dev/image/upload/v1693931259/MorganTechFest/speakers/Timothy_A_Akers_wrxvzi.png"
+              src="https://res.cloudinary.com/ojay-dev/image/upload/v1694030711/MorganTechFest/speakers/Akers_Tim_r9h7yl.jpg"
               alt="Dr. Timothy A. Akers"
-              class="h-full w-full"
+              class="w-full object-cover"
             />
 
             <span class="speaker-name">Dr. Timothy A. Akers</span>
@@ -342,12 +330,12 @@ const FaqQuestionsAnswers = [
 
           <div class="speaker-img-container">
             <img
-              src="https://res.cloudinary.com/ojay-dev/image/upload/v1693931259/MorganTechFest/speakers/Hongtao_Yu_kcnavc.png"
-              alt="Dr. Timothy A. Akers"
-              class="h-full w-full"
+              src="https://res.cloudinary.com/ojay-dev/image/upload/v1694032777/MorganTechFest/speakers/hongtao-yu_xumojr.jpg"
+              alt="Dr. Hongtao Yu"
+              class="object-cover"
             />
 
-            <span class="speaker-name">Dr. Timothy A. Akers</span>
+            <span class="speaker-name">Dr. Hongtao Yu</span>
           </div>
         </div>
       </div>
@@ -357,7 +345,7 @@ const FaqQuestionsAnswers = [
 
         <div class="panelist-section">
           <template v-for="item in panelist" :key="item.name">
-            <img :src="item.img" :alt="item.name" class="h-[279px] w-[244px] object-cover"
+            <img :src="item.img" :alt="item.name" class="panelist-img"
           /></template>
         </div>
       </div>
@@ -393,7 +381,7 @@ const FaqQuestionsAnswers = [
         and realizing your goals.
       </p>
 
-      <p class="font-urbanist mt-9 text-base font-bold text-white lg:mt-[60px] lg:text-xl">
+      <p class="mt-9 font-urbanist text-base font-bold text-white lg:mt-[60px] lg:text-xl">
         Learn more about the opportunity to become a Gold sponsor or explore other available
         sponsorship tiers for the upcoming event. Please send an email to:
         <a href="mailto:morgantechfest@gmail.com" target="_blank" rel="noopener noreferrer"
@@ -404,7 +392,7 @@ const FaqQuestionsAnswers = [
       <div class="mt-14 flex justify-center lg:mt-16">
         <RouterLink
           to="/"
-          class="font-urbanist flex items-center gap-x-4 rounded-[44px] border-2 border-white px-6 py-4 text-lg font-semibold text-white hover:text-white md:text-2xl lg:border-0 lg:py-6 lg:text-3xl"
+          class="flex items-center gap-x-4 rounded-[44px] border-2 border-white px-6 py-4 font-urbanist text-lg font-semibold text-white hover:text-white md:text-2xl lg:border-0 lg:py-6 lg:text-3xl"
           >Become a Sponsor
           <ArrowExternalIcon />
         </RouterLink>
@@ -464,7 +452,7 @@ const FaqQuestionsAnswers = [
             href="https://drive.google.com/drive/folders/15Vswx6fn4A6U_I6ScyX54fm6tYN70gGC?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            class="font-urbanist flex items-center gap-x-4 rounded-[44px] border-2 border-white px-6 py-4 text-lg font-semibold text-white hover:text-white md:text-2xl lg:border-0 lg:py-6 lg:text-3xl"
+            class="flex items-center gap-x-4 rounded-[44px] border-2 border-white px-6 py-4 font-urbanist text-lg font-semibold text-white hover:text-white md:text-2xl lg:border-0 lg:py-6 lg:text-3xl"
             >View album
             <ArrowExternalIcon />
           </a>
@@ -530,14 +518,14 @@ const FaqQuestionsAnswers = [
 }
 
 .hero-text {
-  @apply font-bebas block max-w-[376px] text-center text-8xl font-normal text-white lg:text-left lg:text-[112px];
+  @apply block max-w-[376px] text-center font-bebas text-8xl font-normal text-white lg:text-left lg:text-[112px];
 }
 
 .sub-title {
-  @apply font-bebas block max-w-[376px] text-center text-8xl font-normal text-white lg:text-[112px];
+  @apply block max-w-[376px] text-center font-bebas text-8xl font-normal text-white lg:text-[112px];
 }
 .sub-title-dark {
-  @apply font-bebas block max-w-[376px] text-center text-8xl font-normal text-[#121139]  lg:text-[112px];
+  @apply block max-w-[376px] text-center font-bebas text-8xl font-normal text-[#121139]  lg:text-[112px];
 }
 
 .video-section {
@@ -554,7 +542,7 @@ const FaqQuestionsAnswers = [
 }
 
 .schedule-pill {
-  @apply font-urbanist flex h-20 items-center justify-center rounded-[73px] px-6 text-center text-lg font-bold text-white lg:h-24 lg:text-2xl;
+  @apply flex h-20 items-center justify-center rounded-[73px] px-6 text-center font-urbanist text-lg font-bold text-white lg:h-24 lg:text-2xl;
   border: 3px solid rgba(255, 255, 255, 0.2);
   background: linear-gradient(
       136deg,
@@ -566,7 +554,7 @@ const FaqQuestionsAnswers = [
 }
 
 .speaker-img-container {
-  @apply relative overflow-hidden rounded-3xl;
+  @apply relative h-[375px] w-[328px] overflow-hidden rounded-3xl;
 }
 
 .speaker-img-container::before {
@@ -576,15 +564,19 @@ const FaqQuestionsAnswers = [
 }
 
 .speaker-name {
-  @apply font-bebas absolute bottom-6 left-10 z-10 text-2xl font-normal text-white;
+  @apply absolute bottom-6 left-10 z-10 font-bebas text-2xl font-normal text-white;
 }
 
 .panelist-section {
   @apply mt-6 flex gap-x-5 gap-y-9 overflow-x-auto md:grid md:grid-cols-4 lg:mt-24;
 }
 
+.panelist-img {
+  @apply relative block h-[300px] w-[263px] rounded-2xl object-cover object-center;
+}
+
 .panelist-img-container {
-  @apply relative overflow-hidden rounded-3xl;
+  @apply relative h-full w-full;
 }
 
 .panelist-img-container::before {
@@ -594,6 +586,6 @@ const FaqQuestionsAnswers = [
 }
 
 .panelist-name {
-  @apply font-bebas absolute bottom-6 left-10 z-10 text-2xl font-normal text-white;
+  @apply absolute bottom-6 left-10 z-10 font-bebas text-2xl font-normal text-white;
 }
 </style>
