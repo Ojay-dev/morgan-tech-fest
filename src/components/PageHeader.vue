@@ -1,30 +1,61 @@
 <script setup>
-// import { useRoute } from 'vue-router'
+import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
+import { AppstoreOutlined } from '@ant-design/icons-vue'
 import ChocolateMenuIcon from '@/components/icons/IconChocolateMenu.vue'
 
-import { ref, computed, watch } from 'vue'
-import { AppstoreOutlined } from '@ant-design/icons-vue'
-// const route = useRoute()
-
+// Define reactive properties
 const isClicked = ref(false)
+const selectedKeys = ref(['1'])
+const openKeys = ref([''])
+const isMenuOpen = ref(false)
+const isSticky = ref(false)
+const myHeader = ref(null)
 
-const scaleDown = () => {
-  isClicked.value = true
-  setTimeout(() => {
-    isClicked.value = false
-  }, 200)
+// Define a mapping between the link key and the section id
+const sectionIds = {
+  Home: 'home',
+  'About us': 'about',
+  Schedule: 'schedule',
+  Speakers: 'speakers',
+  Sponsors: 'sponsors',
+  FAQ: 'faq'
+  // Add mappings for other links as needed
 }
 
+// watch sub mobile menu property
+watch(isMenuOpen, (val) => {
+  if (val) {
+    openKeys.value = ['sub2']
+  } else {
+    openKeys.value = ['']
+  }
+})
+
+// Computed property for button class
 const buttonClass = computed(() => ({
   'register-btn': true,
   clicked: isClicked.value
 }))
 
-// Antd menu functions
-const selectedKeys = ref(['1'])
-const openKeys = ref([''])
+// Event handlers
+const scaleDown = async (event) => {
+  event.preventDefault()
 
-const isMenuOpen = ref(false)
+  isClicked.value = true
+
+  await new Promise((resolve) => {
+    setTimeout(() => {
+      isClicked.value = false
+      resolve()
+    }, 1500)
+  })
+
+  window.open(
+    'https://docs.google.com/forms/d/e/1FAIpQLScKCTDITcfJCI_tROrIIsBq-uh4dqivAwua86tE6kAwP9ja8A/viewform',
+    '_blank',
+    'noopener noreferrer'
+  )
+}
 
 const titleClick = (e) => {
   console.log('titleClick', e)
@@ -33,17 +64,6 @@ const titleClick = (e) => {
 const handleClick = (e) => {
   console.log('click', e)
   openKeys.value = ['']
-
-  // Define a mapping between the link key and the section id
-  const sectionIds = {
-    Home: 'home',
-    'About us': 'about',
-    Schedule: 'schedule',
-    Speakers: 'speakers',
-    Sponsors: 'sponsors',
-    FAQ: 'faq'
-    // Add mappings for other links as needed
-  }
 
   const sectionId = sectionIds[e.key]
   if (sectionId) {
@@ -68,17 +88,26 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
 }
 
-watch(isMenuOpen, (val) => {
-  if (val) {
-    openKeys.value = ['sub2']
+const handleScroll = () => {
+  if (window.scrollY > myHeader.value.offsetTop) {
+    isSticky.value = true
   } else {
-    openKeys.value = ['']
+    isSticky.value = false
   }
+}
+
+// Lifecycle hooks
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
 })
 </script>
 
 <template>
-  <header class="bg-blue-theme">
+  <header :class="{ 'bg-blue-theme': !isSticky, sticky: isSticky }" ref="myHeader">
     <div class="header-bg px-5 py-7">
       <div class="mx-auto flex max-w-screen-xl items-center justify-between gap-x-[5%]">
         <div class="flex items-center gap-x-3">
@@ -97,39 +126,38 @@ watch(isMenuOpen, (val) => {
           <a href="#" v-scroll-to="'#faq'" class="nav-link">FAQ</a>
         </nav>
 
-        <RouterLink to="/" :class="buttonClass" @click="scaleDown">Register now</RouterLink>
+        <a href="#" :class="buttonClass" @click="scaleDown">Register now</a>
       </div>
     </div>
-  </header>
 
-  <a-menu
-    id="dddddd"
-    v-model:openKeys="openKeys"
-    v-model:selectedKeys="selectedKeys"
-    mode="inline"
-    @click="handleClick"
-    class="antd-custom-menu"
-  >
-    <a-sub-menu key="sub2" @titleClick="titleClick">
-      <template #icon>
-        <AppstoreOutlined />
-      </template>
-      <template #title>Navigation Two</template>
-      <a-menu-item key="Home">Home</a-menu-item>
-      <a-menu-item key="About us">About us</a-menu-item>
-      <a-menu-item key="Schedule">Schedule</a-menu-item>
-      <a-menu-item key="Speakers">Speakers</a-menu-item>
-      <a-menu-item key="Sponsors">Sponsors</a-menu-item>
-      <a-menu-item key="FAQ">FAQ</a-menu-item>
-    </a-sub-menu>
-  </a-menu>
+    <a-menu
+      id="dddddd"
+      v-model:openKeys="openKeys"
+      v-model:selectedKeys="selectedKeys"
+      mode="inline"
+      @click="handleClick"
+      class="antd-custom-menu"
+    >
+      <a-sub-menu key="sub2" @titleClick="titleClick">
+        <template #icon>
+          <AppstoreOutlined />
+        </template>
+        <template #title>Navigation Two</template>
+        <a-menu-item key="Home">Home</a-menu-item>
+        <a-menu-item key="About us">About us</a-menu-item>
+        <a-menu-item key="Schedule">Schedule</a-menu-item>
+        <a-menu-item key="Speakers">Speakers</a-menu-item>
+        <a-menu-item key="Sponsors">Sponsors</a-menu-item>
+        <a-menu-item key="FAQ">FAQ</a-menu-item>
+      </a-sub-menu>
+    </a-menu>
+  </header>
 </template>
 
 <style scoped>
 .header-bg {
   /* border: 3px solid linear-gradient(136deg, rgba(255, 255, 255, 0.2), rgb(255, 255, 255)); */
   /*
-  backdrop-filter: blur(3.3px);
   */
   border: 3px solid rgba(255, 255, 255, 0.014);
   background: linear-gradient(
@@ -138,6 +166,7 @@ watch(isMenuOpen, (val) => {
       rgba(54, 53, 103, 0.2) 51.01%
     ),
     rgba(0, 0, 128, 0.3);
+  backdrop-filter: blur(3.3px);
 }
 .nav-link {
   @apply font-urbanist text-base font-medium text-white;
@@ -150,5 +179,9 @@ watch(isMenuOpen, (val) => {
 
 .clicked {
   transform: scale(0.9);
+}
+
+.sticky {
+  @apply fixed top-0 z-50 w-full;
 }
 </style>
